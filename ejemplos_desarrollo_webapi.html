@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplos de Desarrollo de una Web API</title>
+ 
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Ejemplos de Desarrollo de una Web API</a>
+</nav>
+
+
+<section id="examples" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Ejemplos de Desarrollo de una Web API</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Ejemplo 1: Registro de Usuarios</h5>
+            <p class="card-text">Desarrolla una Web API que permita a los usuarios registrarse, iniciar sesión y gestionar su perfil.</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Endpoints:
+                <ul>
+                  <li>POST /usuarios: Registra un nuevo usuario.</li>
+                  <li>POST /login: Inicia sesión de usuario.</li>
+                  <li>GET /usuarios/{id}: Obtiene detalles de un usuario.</li>
+                  <li>PUT /usuarios/{id}: Actualiza información de usuario.</li>
+                  <li>DELETE /usuarios/{id}: Elimina un usuario.</li>
+                </ul>
+              </li>
+              <li class="list-group-item">Ejemplo de petición:
+                <pre><code class="language-json">POST /usuarios
+{
+  "nombre": "Ejemplo",
+  "email": "ejemplo@example.com",
+  "contraseña": "secreta123"
+}</code></pre>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Ejemplo 2: Gestión de Productos</h5>
+            <p class="card-text">Crea una Web API para administrar un catálogo de productos, incluyendo operaciones de crear, leer, actualizar y eliminar productos.</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Endpoints:
+                <ul>
+                  <li>GET /productos: Obtiene todos los productos.</li>
+                  <li>GET /productos/{id}: Obtiene detalles de un producto.</li>
+                  <li>POST /productos: Crea un nuevo producto.</li>
+                  <li>PUT /productos/{id}: Actualiza información de un producto.</li>
+                  <li>DELETE /productos/{id}: Elimina un producto.</li>
+                </ul>
+              </li>
+              <li class="list-group-item">Ejemplo de petición:
+                <pre><code class="language-json">POST /productos
+{
+  "nombre": "Producto Ejemplo",
+  "precio": 99.99,
+  "cantidad": 10
+}</code></pre>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

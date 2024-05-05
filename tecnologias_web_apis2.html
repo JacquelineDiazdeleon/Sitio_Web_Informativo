@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecnologías de Web APIs</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* Custom CSS */
+    .technology-card {
+      transition: transform 0.3s ease;
+    }
+    .technology-card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Tecnologías de Web APIs</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#about">Acerca de</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#technologies">Tecnologías</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Acerca de Tecnologías de Web APIs</h2>
+    <p>
+      Aquí encontrarás información sobre las diferentes tecnologías utilizadas en el desarrollo de Web APIs, cómo se utilizan en la práctica y recursos útiles para aprender más sobre ellas.
+    </p>
+  </div>
+</section>
+
+<!-- seccion de tecnologias -->
+<section id="technologies" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Tecnologías</h2>
+    <div class="row">
+     
+      <div class="col-md-4 mb-4">
+        <div class="card technology-card">
+          <div class="card-body">
+            <h5 class="card-title">REST</h5>
+            <p class="card-text">Representational State Transfer (REST) es un estilo arquitectónico para el desarrollo de sistemas distribuidos. Las APIs RESTful se basan en los principios de REST y son ampliamente utilizadas en el desarrollo web.</p>
+            <a href="https://restfulapi.net/" class="btn btn-primary" target="_blank">Más información</a>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-md-4 mb-4">
+        <div class="card technology-card">
+          <div class="card-body">
+            <h5 class="card-title">GraphQL</h5>
+            <p class="card-text">GraphQL es un lenguaje de consulta para APIs y un entorno de tiempo de ejecución para ejecutar estas consultas con tus datos existentes. GraphQL proporciona una forma más eficiente y poderosa de obtener y manipular datos en comparación con las APIs REST tradicionales.</p>
+            <a href="https://graphql.org/" class="btn btn-primary" target="_blank">Más información</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 mb-4">
+        <div class="card technology-card">
+          <div class="card-body">
+            <h5 class="card-title">WebSocket</h5>
+            <p class="card-text">WebSocket es un protocolo de comunicación bidireccional que permite la comunicación interactiva entre el navegador del usuario y un servidor en tiempo real. Se utiliza para aplicaciones web que requieren actualizaciones en tiempo real, como chats y juegos en línea.</p>
+            <a href="https://developer.mozilla.org/es/docs/Web/API/WebSocket" class="btn btn-primary" target="_blank">Más información</a>
+          </div>
+        </div>
+      </div>
+   
+
+<div class="col-md-4 mb-4">
+    <div class="card technology-card">
+      <div class="card-body">
+        <h5 class="card-title">gRPC</h5>
+        <p class="card-text">gRPC es un sistema de comunicación de código abierto desarrollado por Google que utiliza HTTP/2 para el transporte y Protocol Buffers como la interfaz de serialización de mensajes. Es adecuado para construir APIs de alto rendimiento, escalables y multiplataforma.</p>
+        <a href="https://grpc.io/" class="btn btn-primary" target="_blank">Más información</a>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="col-md-4 mb-4">
+    <div class="card technology-card">
+      <div class="card-body">
+        <h5 class="card-title">OData</h5>
+        <p class="card-text">OData (Open Data Protocol) es un protocolo abierto basado en estándares web que permite la creación y el consumo de servicios de datos interoperables a través de diferentes aplicaciones y plataformas. Proporciona una manera uniforme de acceder y manipular datos a través de la web.</p>
+        <a href="https://www.odata.org/" class="btn btn-primary" target="_blank">Más información</a>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="col-md-4 mb-4">
+    <div class="card technology-card">
+      <div class="card-body">
+        <h5 class="card-title">JSON-RPC</h5>
+        <p class="card-text">JSON-RPC (Remote Procedure Call) es un protocolo ligero para la comunicación entre sistemas distribuidos que utiliza el formato JSON para la serialización de datos. Permite invocar métodos remotos de manera sencilla y eficiente a través de HTTP o TCP/IP.</p>
+        <a href="https://www.jsonrpc.org/" class="btn btn-primary" target="_blank">Más información</a>
+      </div>
+    </div>
+  </div>
+ </div>
+  </div>
+</section>
+
+
+<footer class="bg-dark text-white text-center py-3">
+  <div class="container">
+  </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
